@@ -1,44 +1,200 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il mio sito</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            text-align: center;
-            line-height: 1.6;
-        }
+<title>Dott.ssa Lorraine Aversano | Psicologa</title>
 
-        h1 {
-            color: #2563eb;
-        }
+<meta name="description"
+content="Psicologa iscritta all'Ordine degli Psicologi della Campania. Consulenza e sostegno psicologico per adulti, persone LGBTQIA+ e familiari. Colloqui online in italiano e francese.">
 
-        .box {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-        }
-    </style>
-</head>
+<style>
 
-<body>
+:root{
+    --sage:#8AA399;
+    --sage-light:#eef4f1;
+    --blue:#5E81AC;
+    --text:#333333;
+    --bg:#ffffff;
+    --light:#f8fafb;
+}
 
-    <div class="box">
-        <h1>Benvenuto!</h1>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        <p>
-            Questo è il mio primo sito ospitato su GitHub Pages.
-        </p>
+html{
+    scroll-behavior:smooth;
+}
 
-        <p>
-            Creato gratuitamente 🚀
-        </p>
-    </div>
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    color:var(--text);
+    line-height:1.7;
+    background:#fff;
+}
 
-</body>
-</html>
+.container{
+    width:min(1100px,92%);
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+h1,h2,h3{
+    line-height:1.3;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:18px;
+    color:var(--blue);
+}
+
+.section-intro{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 50px auto;
+    color:#666;
+}
+
+.hero{
+    background:linear-gradient(135deg,var(--sage-light),#ffffff);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+    color:#2f4f46;
+}
+
+.subtitle{
+    color:var(--blue);
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:1.15rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    margin:8px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--sage);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#738c82;
+}
+
+.btn-secondary{
+    border:2px solid var(--blue);
+    color:var(--blue);
+}
+
+.btn-secondary:hover{
+    background:var(--blue);
+    color:white;
+}
+
+.badges{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.badge{
+    background:white;
+    border-radius:20px;
+    padding:10px 16px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:var(--blue);
+}
+
+.about{
+    background:var(--light);
+}
+
+.about-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.about p{
+    margin-bottom:18px;
+}
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.step{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
+
+.step-number{
+    font-size:1.8rem;
+    color:var(--sage);
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.faq{
+    max-width:900px;
+    margin:auto;
+}
+
+details{
+    margin-bottom:15px;
+    background:white;
+    border-radius:12px;
+    padding:18px;
+   
