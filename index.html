@@ -248,6 +248,46 @@ section{
 }
 
 }
+.hero-layout{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.hero-photo img{
+    width:100%;
+    max-width:300px;
+    border-radius:24px;
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+    display:block;
+}
+
+.hero-text-container{
+    text-align:left;
+}
+
+.hero-text-container h1{
+    margin-bottom:20px;
+}
+
+@media(max-width:900px){
+
+    .hero-layout{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:30px;
+    }
+
+    .hero-photo{
+        display:flex;
+        justify-content:center;
+    }
+
+    .hero-text-container{
+        text-align:center;
+    }
+}
 </style>
 
 </head>
@@ -256,30 +296,45 @@ section{
 
 <section class="hero">
 
-<div class="container hero-content">
+<div class="container hero-layout">
 
-<h1>Dott.ssa Lorraine Aversano</h1>
+    <div class="hero-photo">
+        <img src="Designer.png"
+             alt="Dott.ssa Lorraine Aversano">
+    </div>
 
-<p class="subtitle">
-Psicologa | Consulenza e sostegno psicologico
-</p>
+    <div class="hero-text-container">
 
-<p class="hero-text">
-Uno spazio di ascolto rispettoso e non giudicante per affrontare difficoltà personali, relazionali e professionali, nel rispetto della propria storia, identità e unicità.
-</p>
+        <h1>Dott.ssa Lorraine Aversano</h1>
 
-<a href="#contatti" class="btn btn-primary">Prenota un colloquio</a>
+        <p class="subtitle">
+            Psicologa | Consulenza e sostegno psicologico
+        </p>
 
-<a href="#chi-sono" class="btn btn-secondary">Scopri di più</a>
+        <p class="hero-text">
+            Uno spazio di ascolto rispettoso e non giudicante
+            per affrontare difficoltà personali, relazionali
+            e professionali nel rispetto della propria storia,
+            identità e unicità.
+        </p>
 
+        <a href="#contatti" class="btn btn-primary">
+            Prenota un colloquio
+        </a>
+
+        <a href="#chi-sono" class="btn btn-secondary">
+            Scopri di più
+        </a>
 <div class="badges">
 <div class="badge">🌈 Persone LGBTQIA+</div>
 <div class="badge">🤝 Familiari</div>
 <div class="badge">💻 Colloqui online</div>
 <div class="badge">🇮🇹 🇫🇷 Italiano e Francese</div>
+
+    </div>
+</div>
 </div>
 
-</div>
 
 </section>
 
